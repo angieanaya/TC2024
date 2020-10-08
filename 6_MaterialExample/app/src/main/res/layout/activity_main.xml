@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a big title!"
+        android:textSize="48sp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:text="Submit"
+        app:backgroundTint="@color/brandBabyBlue"
+        app:layout_constraintEnd_toEndOf="@+id/myText"
+        app:layout_constraintStart_toStartOf="@+id/myText"
+        app:layout_constraintTop_toBottomOf="@+id/myText"
+        app:icon="@drawable/ic_mood_24px"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+
+        />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:text="Cancel"
+        android:backgroundTint="@color/brandBabyBlue"
+        app:layout_constraintEnd_toEndOf="@+id/button_submit"
+        app:layout_constraintStart_toStartOf="@+id/button_submit"
+        app:layout_constraintTop_toBottomOf="@+id/button_submit" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="This is a text input"
+        android:tooltipText="Enter your name"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_marginBottom="141dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="This is a text input"
+        android:text="This is a text input"
+        android:textColor="#FFFFFF"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
